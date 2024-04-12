@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-book Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>E-book Viewer</h1>
+    <embed src="{{ url_for('static', filename='ebook.pdf') }}" width="100%" height="600px" type="application/pdf">
+    <br>
+    <button id="releaseButton">Release E-book</button>
+
+    <div id="message"></div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
